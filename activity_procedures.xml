@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Procedures"
+    android:orientation="vertical" >
+
+    <!-- Add ScrollView as the parent layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <!-- Your content that needs to be scrollable -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EAD7AA" >
+
+            <!-- Add your UI elements here -->
+            <!-- For example: -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/title"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="match_parent"
+                android:layout_height="234dp"
+                android:contentDescription="@string/first_desc"
+                android:src="@drawable/aftermathofwildfire" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_subtitle"
+                android:textSize="30sp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:padding="16dp"
+                android:text="@string/first_info"
+                android:textColor="#04244C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_subtitle"
+                android:textSize="30sp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:padding="16dp"
+                android:text="@string/second_info"
+                android:textSize="18sp"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:padding="16dp"
+                android:text="@string/third_subtitle"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:padding="16dp"
+                android:text="@string/third_info"
+                android:textSize="18sp"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:padding="16dp"
+                android:text="@string/fourth_subtitle"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="@string/fourth_info"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColor="#04244C" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/resources_button"
+                    android:layout_width="205dp"
+                    android:layout_height="50dp"
+                    android:text="@string/more_resources_wild"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    tools:ignore="NestedWeights" />
+
+                <Button
+                    android:id="@+id/home_button"
+                    android:layout_width="205dp"
+                    android:layout_height="50dp"
+                    android:text="@string/home_page_wild"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Add more UI elements here -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

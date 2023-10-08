@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClimateChange"
+    android:orientation="vertical" >
+
+    <!-- Add ScrollView as the parent layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <!-- Your content that needs to be scrollable -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EAD7AA" >
+
+            <!-- Add your UI elements here -->
+            <!-- For example: -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/two_title"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="match_parent"
+                android:layout_height="234dp"
+                android:contentDescription="@string/first_desc"
+                android:src="@drawable/wildfireandclimatechange_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/two_first_sub"
+                android:textSize="30sp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="333dp"
+                android:padding="16dp"
+                android:text="@string/two_first_info"
+                android:textColor="#04244C"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/myImageViewTwo"
+                android:layout_width="match_parent"
+                android:layout_height="234dp"
+                android:contentDescription="@string/two_cred"
+                android:src="@drawable/wildfiresovertheyears_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/two_cred"
+                android:textSize="10sp"
+                android:padding="8dp"
+                android:textColor="#04244C"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/two_conc"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColor="#04244C" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/resources_button"
+                    android:layout_width="205dp"
+                    android:layout_height="50dp"
+                    android:text="@string/more_resources_wild"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    tools:ignore="NestedWeights" />
+
+                <Button
+                    android:id="@+id/home_button"
+                    android:layout_width="205dp"
+                    android:layout_height="50dp"
+                    android:text="@string/home_page_wild"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Add more UI elements here -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

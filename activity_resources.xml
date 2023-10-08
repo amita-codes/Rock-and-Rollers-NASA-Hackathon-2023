@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resources"
+    android:orientation="vertical" >
+
+    <!-- Add ScrollView as the parent layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Your content that needs to be scrollable -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EAD7AA" >
+
+            <!-- Add your UI elements here -->
+            <!-- For example: -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Resources"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/info_1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:padding="16dp"
+                android:text="@string/info_2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:padding="16dp"
+                android:text="@string/info_3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:padding="16dp"
+                android:text="@string/info_4"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="205dp"
+                android:layout_height="50dp"
+                android:text="@string/home_page"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Add more UI elements here -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

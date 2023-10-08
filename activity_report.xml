@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Report"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="#EAD7AA">
+
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/report_a_fire_in_your_community"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Location"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/location_of_fire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Severity"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/severity_of_fire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Growth"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/growth_potential_low_medium_high"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/other_comments"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="550dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/resources_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="2dp"
+        android:text="@string/more_resources_rep"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="210dp"
+        android:text="@string/home_page_rep"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

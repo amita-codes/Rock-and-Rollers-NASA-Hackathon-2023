@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wildfires101"
+    android:orientation="vertical" >
+
+    <!-- Add ScrollView as the parent layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Your content that needs to be scrollable -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EAD7AA" >
+
+            <!-- Add your UI elements here -->
+            <!-- For example: -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/wild"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#04244C" />
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="234dp"
+                android:contentDescription="@string/first_desc"
+                android:src="@drawable/wildfireimage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:padding="16dp"
+                android:text="@string/start"
+                android:textColor="#04244C"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/key"
+                android:textSize="18sp"
+                android:textColor="#04244C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/causes"
+                android:textColor="#04244C"
+                android:textSize="30sp"
+                android:padding="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:padding="16dp"
+                android:text="@string/research"
+                android:textColor="#04244C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:padding="16dp"
+                android:text="@string/spred"
+                android:textColor="#04244C"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="651dp"
+                android:padding="16dp"
+                android:text="@string/inten"
+                android:textColor="#04244C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:padding="16dp"
+                android:text="@string/eval"
+                android:textColor="#04244C"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="472dp"
+                android:padding="16dp"
+                android:text="@string/threat"
+                android:textColor="#04244C"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/resources_button"
+                    android:layout_width="205dp"
+                    android:layout_height="50dp"
+                    android:text="@string/more_resources_wild"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    tools:ignore="NestedWeights" />
+
+                <Button
+                    android:id="@+id/home_button"
+                    android:layout_width="205dp"
+                    android:layout_height="50dp"
+                    android:text="@string/home_page_wild"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Add more UI elements here -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
